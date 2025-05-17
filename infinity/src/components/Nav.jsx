@@ -12,19 +12,22 @@ function Nav() {
 
 
   return (
-   <nav className='flex justify-between mt-1 p-2 ml-2 mr-2 '>
+   <nav className='flex justify-between  p-2 ml-2 mr-2 bg-linear-30 from-white to-neutral-600'>
      <div className='text-center lg:flex gap-3'>
         <IoIosInfinite className='text-3xl place-self-center'/>
         <span className='place-self-center lg:text-xl font-medium'>Infinity Dental and Eye Center</span>
      </div>
 
-     <div className='hidden md:inline p-3'>
+     <div className='hidden md:inline place-self-center text-lg'>
         <ul className='flex gap-7'>
             <Link>About Us</Link>
             <Link>Services</Link>
             <Link>Contact</Link>
-            <Link>Book an Appointment</Link>
         </ul>
+     </div>
+
+     <div className='hidden md:inline p-3 mr-15 text-white'>
+      <button className='border-2 p-2 rounded-2xl'>Book Appointment</button>
      </div>
 
      <div className='md:hidden p-3'>

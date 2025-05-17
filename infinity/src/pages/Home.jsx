@@ -1,38 +1,32 @@
-import React from 'react'
+import React from 'react';
 import { RiToothLine } from "react-icons/ri";
 import { GiSunglasses } from "react-icons/gi";
 
-
-
 function Home() {
   return (
-    <div className='h-screen'>
+    <main>
+      <section className=''>
+        <div className='flex flex-col md:flex-row justify-center align-center mr-10 ml-10 md:ml-5 md:mr-5 md:gap-10 h-screen place-self-center md:-mt-10 md:text-left'>
+          <div className='flex md:w-full justify-center flex-col gap-5'>
+            <div className='flex relative text-9xl flex-row justify-around bottom-0 -z-10'>
+              <RiToothLine className='fill-neutral-400'/>
+              <GiSunglasses className='fill-neutral-400 '/>
+            </div>
+            <span className='text-3xl md:text-4xl lg:text-5xl font-serif text-center '>
+              Your Complete Vision & Dental Wellness Starts Here
+            </span>
+            <span className=' text-center text-lg'>Discover expert dental and eye care under one roof ensuring a healthier and brighter you.</span>
+            <button className='p-2 w-50 border-2 rounded-full place-self-center'>Book An Appointment</button>
+            <span className='text-center font-thin text-xl'>Your Vison. Your Smile. Our Expertise.</span>
+          </div>
 
-      <span>
-        <p className='text-3xl text-center mt-5 md:text-left '>PROVIDING
-          <em className='font-light'> THE BEST</em><br/> DENTAL AND EYE CARE
-        </p>
-      </span>
-
-      <div className='h-90 relative'>
-        <div className='relative flex mt-10 items-center justify-center md:'>
-          <img src="src/images/homebg.jpg" alt="" className='absolute md:relative md:w-1/3 top-0 left-5 w-3/5 rounded-3xl'/>
-          <span className='text-5xl opacity-60'><RiToothLine className='absolute md:relative top-10 right-15 '/> </span>
-          <img src="src/images/homebg.jpg" alt="" className='absolute md:hidden top-40 right-5 w-3/5 rounded-3xl'/>
-          <span className='absolute top-55 left-10 text-6xl opacity-80 '><GiSunglasses /></span>
+          <div className='flex justify-center align-center mt-5'>
+            <img src="src/images/homebg.jpg" alt="" className='rounded-4xl place-self-center'/>
+          </div>
         </div>
-      </div>
-
-      <p className='text-justify text-xl ml-6 mr-6'>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, officiis doloremque iure laborum quidem excepturi deleniti. Voluptates corrupti molestias perferendis ea dignissimos qui. Ex reprehenderit, reiciendis consequatur blanditiis sequi enim?
-      </p>
-
-      <div className='border-2 text-2xl w-4/5 text-center place-self-center rounded-2xl mt-5'>
-        <button className='p-2'>Book an Appointment</button>
-      </div>
-
-    </div>
-  )
+      </section>
+    </main>
+  );
 }
 
-export default Home
+export default Home;
